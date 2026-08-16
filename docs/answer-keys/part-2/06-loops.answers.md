@@ -1,6 +1,6 @@
 # Answer Key — Chapter 2.6: Loops
 
-[← Answer Keys](../README.md) · [Chapter 2.6](../../part-2-programming-fundamentals/06-loops.md)
+[← Answer Keys](../overview.md) · [Chapter 2.6](../../part-2-programming-fundamentals/06-loops.md)
 
 > **Instructor note:** Question 4 is the Playwright-predictor. A learner who picks A will write the flake in Chapter 5.1. G.3 is the judgment exercise; if time is short, drop G.1 and keep G.3.
 

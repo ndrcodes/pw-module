@@ -1,6 +1,6 @@
 # Answer Key — Chapter 2.3: Variables and Constants
 
-[← Answer Keys](../README.md) · [Chapter 2.3](../../part-2-programming-fundamentals/03-variables-and-constants.md)
+[← Answer Keys](../overview.md) · [Chapter 2.3](../../part-2-programming-fundamentals/03-variables-and-constants.md)
 
 > **Instructor note:** Questions 2, 3, and 8 all test the same idea — that `const` fixes the binding and not the contents — from three angles. If a learner gets 1 right and 2/3/8 wrong, they have memorized the definition without understanding it, which is the most common outcome in this chapter and worth a whiteboard demonstration rather than a re-read.
 

@@ -1,6 +1,6 @@
 # Answer Key — Chapter 1.2: Manual Testing vs Test Automation
 
-[← Answer Keys](../README.md) · [Chapter 1.2](../../part-1-testing-fundamentals/02-manual-vs-automation-testing.md)
+[← Answer Keys](../overview.md) · [Chapter 1.2](../../part-1-testing-fundamentals/02-manual-vs-automation-testing.md)
 
 > **Instructor note:** Questions 3, 6, and 8 are the ones that matter. A learner who answers all three correctly can already reason about automation as an investment decision, which is unusual at this stage and worth naming out loud. Question 4 is the one that produces audible surprise; do the arithmetic on the board.
 

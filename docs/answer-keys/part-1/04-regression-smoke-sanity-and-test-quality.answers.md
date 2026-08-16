@@ -1,6 +1,6 @@
 # Answer Key — Chapter 1.4: Regression, Smoke, Sanity, and Test Case Quality
 
-[← Answer Keys](../README.md) · [Chapter 1.4](../../part-1-testing-fundamentals/04-regression-smoke-sanity-and-test-quality.md)
+[← Answer Keys](../overview.md) · [Chapter 1.4](../../part-1-testing-fundamentals/04-regression-smoke-sanity-and-test-quality.md)
 
 > **Instructor note:** Questions 3, 4, and 7 are the ones that matter most. Question 7 is the chapter's most important idea — silent coverage loss when an ambiguous case is automated — and it is the one learners are least likely to have encountered anywhere else. Exercise G.3 is the highest-value activity in Part I; protect time for it.
 

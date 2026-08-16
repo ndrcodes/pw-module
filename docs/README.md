@@ -1,3 +1,10 @@
+---
+id: intro
+slug: /
+title: QA Automation Engineering with TypeScript and Playwright
+sidebar_label: Overview
+---
+
 # QA Automation Engineering with TypeScript and Playwright
 
 ### From "I don't know how to code" to "I can design, implement, debug, and maintain an automation framework"
@@ -33,14 +40,13 @@ Every programming concept in this book is taught twice: once as a programming id
 1. Read [Course Overview](00-course-overview/01-overview.md) and [Objectives and Outcomes](00-course-overview/02-objectives-and-outcomes.md) first.
 2. Follow the chapters in order. The ordering is deliberate — see [Learning Progression](00-course-overview/03-learning-progression.md) for the dependency rules.
 3. For each chapter: read sections A-F, then do **every** exercise in G before attempting the assignment in H. Take the quiz in I without looking at the answer key.
-4. Answer keys live in [`answer-keys/`](answer-keys/), mirroring the chapter paths. Do not open them until you have written your own answers down.
+4. Answer keys live in [Answer keys](answer-keys/overview.md). Do not open them until you have written your own answers down.
 5. Read the [Generative AI Policy](00-course-overview/05-ai-policy.md) before you use an AI assistant on any assignment. It is part of the curriculum, not a disclaimer.
 
 **If you are an instructor:**
 
 1. Use [Weekly Schedule](00-course-overview/06-weekly-schedule.md) as your term plan (2 sessions/week, ~90 minutes each).
-2. Each Part has an `instructor-notes.md` with misconceptions, live-coding demos, checkpoint questions, struggle signals, and remediation exercises.
-3. Grading structure and rubrics: [Assessment Strategy](00-course-overview/04-assessment-strategy.md).
+2. Grading structure and rubrics: [Assessment Strategy](00-course-overview/04-assessment-strategy.md).
 
 **Difficulty markers** appear on every chapter and assignment:
 
@@ -88,7 +94,7 @@ Every chapter follows the same ten-section structure so you always know where to
 
 *Why automation exists, and what it is for. No code yet.*
 
-[Module Overview](part-1-testing-fundamentals/00-module-overview.md) · [Instructor Notes](part-1-testing-fundamentals/instructor-notes.md)
+[Module Overview](part-1-testing-fundamentals/00-module-overview.md)
 
 | # | Chapter | Level |
 |---|---|---|
@@ -103,7 +109,7 @@ Every chapter follows the same ten-section structure so you always know where to
 
 *Programming from absolute zero, taught with QA examples throughout.*
 
-[Module Overview](part-2-programming-fundamentals/00-module-overview.md) · [Instructor Notes](part-2-programming-fundamentals/instructor-notes.md)
+[Module Overview](part-2-programming-fundamentals/00-module-overview.md)
 
 | # | Chapter | Level |
 |---|---|---|
@@ -130,7 +136,7 @@ Every chapter follows the same ten-section structure so you always know where to
 
 *What separates a script that passes from a test you can trust.*
 
-[Module Overview](part-3-automation-fundamentals/00-module-overview.md) · [Instructor Notes](part-3-automation-fundamentals/instructor-notes.md)
+[Module Overview](part-3-automation-fundamentals/00-module-overview.md)
 
 | # | Chapter | Level |
 |---|---|---|
@@ -143,7 +149,7 @@ Every chapter follows the same ten-section structure so you always know where to
 
 *API testing comes before Web automation: faster feedback, simpler debugging, fewer moving parts.*
 
-[Module Overview](part-4-api-testing-and-automation/00-module-overview.md) · [Instructor Notes](part-4-api-testing-and-automation/instructor-notes.md)
+[Module Overview](part-4-api-testing-and-automation/00-module-overview.md)
 
 | # | Chapter | Level |
 |---|---|---|
@@ -164,7 +170,7 @@ Every chapter follows the same ten-section structure so you always know where to
 
 *Now, and only now, we open a browser.*
 
-[Module Overview](part-5-web-automation-playwright/00-module-overview.md) · [Instructor Notes](part-5-web-automation-playwright/instructor-notes.md)
+[Module Overview](part-5-web-automation-playwright/00-module-overview.md)
 
 | # | Chapter | Level |
 |---|---|---|
@@ -182,7 +188,7 @@ Every chapter follows the same ten-section structure so you always know where to
 
 *From scripts to a framework a team can live with for years.*
 
-[Module Overview](part-6-framework-engineering/00-module-overview.md) · [Instructor Notes](part-6-framework-engineering/instructor-notes.md)
+[Module Overview](part-6-framework-engineering/00-module-overview.md)
 
 | # | Chapter | Level |
 |---|---|---|
@@ -202,7 +208,7 @@ Every chapter follows the same ten-section structure so you always know where to
 
 *A test that only runs on your laptop is a personal hobby, not a quality gate.*
 
-[Module Overview](part-7-cicd/00-module-overview.md) · [Instructor Notes](part-7-cicd/instructor-notes.md)
+[Module Overview](part-7-cicd/00-module-overview.md)
 
 | # | Chapter | Level |
 |---|---|---|
@@ -216,7 +222,7 @@ Every chapter follows the same ten-section structure so you always know where to
 
 *The judgment that separates a junior from an engineer.*
 
-[Module Overview](part-8-professional-engineering/00-module-overview.md) · [Instructor Notes](part-8-professional-engineering/instructor-notes.md)
+[Module Overview](part-8-professional-engineering/00-module-overview.md)
 
 | # | Chapter | Level |
 |---|---|---|
@@ -265,7 +271,7 @@ Build and ship a complete TypeScript + Playwright framework covering API and UI 
 This book is written in two phases.
 
 - **Phase 1 (complete)** — Full architecture: all course design documents, module overviews, instructor notes, project briefs, capstone brief, and every chapter's Learning Objectives + Prerequisite Knowledge + concept preview.
-- **Phase 2 (in progress, part by part)** — Full chapter bodies: Concept Explanation, QA Context, code examples, common mistakes, exercises, coding assignments, quizzes with answer keys, and reviews. Resume from [PHASE-2-CONTINUE.md](PHASE-2-CONTINUE.md).
+- **Phase 2 (in progress, part by part)** — Full chapter bodies: Concept Explanation, QA Context, code examples, common mistakes, exercises, coding assignments, quizzes with answer keys, and reviews.
 
 ### Phase 2 progress
 

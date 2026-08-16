@@ -1,0 +1,141 @@
+:root {
+  --ifm-color-primary: #0f766e;
+  --ifm-color-primary-dark: #0d6a63;
+  --ifm-color-primary-darker: #0c645d;
+  --ifm-color-primary-darkest: #0a524c;
+  --ifm-color-primary-light: #15887f;
+  --ifm-color-primary-lighter: #1a9188;
+  --ifm-color-primary-lightest: #2aa89e;
+  --ifm-code-font-size: 90%;
+  --ifm-font-size-base: 16px;
+  --ifm-heading-font-weight: 650;
+  --docusaurus-highlighted-code-line-bg: rgba(15, 118, 110, 0.08);
+  --wip-bg: #fff4e5;
+  --wip-fg: #9a6700;
+  --wip-border: #f5d48a;
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #2dd4bf;
+  --ifm-color-primary-dark: #25c2af;
+  --ifm-color-primary-darker: #23b8a6;
+  --ifm-color-primary-darkest: #1d9788;
+  --ifm-color-primary-light: #45d9c6;
+  --ifm-color-primary-lighter: #5edecd;
+  --ifm-color-primary-lightest: #86e7d9;
+  --docusaurus-highlighted-code-line-bg: rgba(45, 212, 191, 0.12);
+  --wip-bg: #3d2e12;
+  --wip-fg: #f0c674;
+  --wip-border: #6b5420;
+}
+
+.navbar {
+  box-shadow: none;
+  border-bottom: 1px solid var(--ifm-toc-border-color);
+}
+
+.footer {
+  border-top: 1px solid var(--ifm-toc-border-color);
+}
+
+.markdown table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.markdown pre {
+  max-width: 100%;
+}
+
+.theme-doc-markdown {
+  overflow-wrap: anywhere;
+}
+
+.sidebar-badge {
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+  margin-left: 0.35rem;
+  padding: 0.05rem 0.4rem;
+  border: 1px solid var(--wip-border);
+  border-radius: 999px;
+  background: var(--wip-bg);
+  color: var(--wip-fg);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1.35;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.theme-doc-sidebar-item-category.sidebar-wip > .menu__list-item-collapsible {
+  display: flex;
+  align-items: center;
+}
+
+.theme-doc-sidebar-item-category.sidebar-wip > .menu__list-item-collapsible > .menu__link {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.theme-doc-sidebar-item-category.sidebar-wip > .menu__list-item-collapsible::before {
+  content: 'WIP';
+  order: 1;
+  flex: 0 0 auto;
+  margin: 0 0.15rem 0 0.25rem;
+  padding: 0.05rem 0.4rem;
+  border: 1px solid var(--wip-border);
+  border-radius: 999px;
+  background: var(--wip-bg);
+  color: var(--wip-fg);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1.35;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.theme-doc-sidebar-item-category.sidebar-wip > .menu__list-item-collapsible > .menu__caret {
+  order: 2;
+  flex: 0 0 auto;
+}
+
+.theme-doc-sidebar-item-link.sidebar-wip > .menu__link {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.theme-doc-sidebar-item-link.sidebar-wip > .menu__link::after {
+  content: 'WIP';
+  flex: 0 0 auto;
+  padding: 0.05rem 0.4rem;
+  border: 1px solid var(--wip-border);
+  border-radius: 999px;
+  background: var(--wip-bg);
+  color: var(--wip-fg);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1.35;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+@media (max-width: 996px) {
+  .navbar__title {
+    font-size: 0.95rem;
+  }
+
+  .markdown h1 {
+    font-size: 1.7rem;
+  }
+
+  .markdown h2 {
+    font-size: 1.3rem;
+  }
+}

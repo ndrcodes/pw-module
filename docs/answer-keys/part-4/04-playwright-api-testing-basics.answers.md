@@ -1,6 +1,6 @@
 # Answer Key — Chapter 4.4: Playwright API Testing Basics
 
-[← Answer Keys](../README.md) · [Chapter 4.4](../../part-4-api-testing-and-automation/04-playwright-api-testing-basics.md)
+[← Answer Keys](../overview.md) · [Chapter 4.4](../../part-4-api-testing-and-automation/04-playwright-api-testing-basics.md)
 
 > **Instructor note:** Question 2 is Demo 5. Run it live if anyone picks A.
 

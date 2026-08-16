@@ -1,6 +1,6 @@
 # Answer Key — Chapter 3.1: Principles of Good Automated Tests
 
-[← Answer Keys](../README.md) · [Chapter 3.1](../../part-3-automation-fundamentals/01-principles-of-good-automated-tests.md)
+[← Answer Keys](../overview.md) · [Chapter 3.1](../../part-3-automation-fundamentals/01-principles-of-good-automated-tests.md)
 
 > **Instructor note:** Grade reasoning over labels (instructor notes §9). Question 4 is the determinism inversion — if the room says True, rerun Demo 3. Question 9 is the artifact habit; do not accept "rerun" as professionalism.
 

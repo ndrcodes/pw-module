@@ -1,6 +1,6 @@
 # Answer Key — Chapter 2.10: TypeScript Fundamentals
 
-[← Answer Keys](../README.md) · [Chapter 2.10](../../part-2-programming-fundamentals/10-typescript-fundamentals.md)
+[← Answer Keys](../overview.md) · [Chapter 2.10](../../part-2-programming-fundamentals/10-typescript-fundamentals.md)
 
 > **Instructor note:** Questions 2, 6, and 10 are the JSON-boundary predictors. Demo adding a union member and watching `never` fail. G.2 is the conversion moment for skeptics.
 

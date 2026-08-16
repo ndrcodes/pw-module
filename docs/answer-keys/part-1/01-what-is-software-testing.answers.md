@@ -1,6 +1,6 @@
 # Answer Key — Chapter 1.1: What Is Software Testing?
 
-[← Answer Keys](../README.md) · [Chapter 1.1](../../part-1-testing-fundamentals/01-what-is-software-testing.md)
+[← Answer Keys](../overview.md) · [Chapter 1.1](../../part-1-testing-fundamentals/01-what-is-software-testing.md)
 
 > **Instructor note:** Questions 1, 5, and 8 are the ones that predict later success in this course. A learner who gets 8 right has already internalized the professional stance the whole curriculum is built on; a learner who picks 8A or 8B needs a conversation, not a re-read.
 

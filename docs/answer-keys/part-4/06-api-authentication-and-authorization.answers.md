@@ -1,6 +1,6 @@
 # Answer Key — Chapter 4.6: API Authentication and Authorization
 
-[← Answer Keys](../README.md) · [Chapter 4.6](../../part-4-api-testing-and-automation/06-api-authentication-and-authorization.md)
+[← Answer Keys](../overview.md) · [Chapter 4.6](../../part-4-api-testing-and-automation/06-api-authentication-and-authorization.md)
 
 > **Instructor note:** Question 1 is Demo 7. If anyone says A, stop and discuss IDOR.
 

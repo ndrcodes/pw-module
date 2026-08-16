@@ -1,6 +1,6 @@
 # Answer Key — Chapter 4.7: Reusable API Clients and Models
 
-[← Answer Keys](../README.md) · [Chapter 4.7](../../part-4-api-testing-and-automation/07-reusable-api-clients-and-models.md)
+[← Answer Keys](../overview.md) · [Chapter 4.7](../../part-4-api-testing-and-automation/07-reusable-api-clients-and-models.md)
 
 > **Instructor note:** Question 1 is the review rule. Ask "where do the assertions live?" in every 4.7 demo.
 

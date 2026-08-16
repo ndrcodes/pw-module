@@ -1,6 +1,6 @@
 # Answer Key — Chapter 4.2: REST APIs and CRUD
 
-[← Answer Keys](../README.md) · [Chapter 4.2](../../part-4-api-testing-and-automation/02-rest-api-and-crud.md)
+[← Answer Keys](../overview.md) · [Chapter 4.2](../../part-4-api-testing-and-automation/02-rest-api-and-crud.md)
 
 > **Instructor note:** Question 4 is the PUT-erasure item — demo it if the room splits. Question 5 is the "REST = JSON" misconception from the instructor notes.
 

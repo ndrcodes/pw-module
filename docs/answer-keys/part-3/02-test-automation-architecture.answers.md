@@ -1,6 +1,6 @@
 # Answer Key — Chapter 3.2: Test Automation Architecture
 
-[← Answer Keys](../README.md) · [Chapter 3.2](../../part-3-automation-fundamentals/02-test-automation-architecture.md)
+[← Answer Keys](../overview.md) · [Chapter 3.2](../../part-3-automation-fundamentals/02-test-automation-architecture.md)
 
 > **Instructor note:** Question 4 is the ceremony trap. Question 9 is how the constitution stays alive — reject-or-amend, not "guidelines."
 

@@ -1,6 +1,6 @@
 # Answer Key — Chapter 1.3: Test Strategy and the Test Pyramid
 
-[← Answer Keys](../README.md) · [Chapter 1.3](../../part-1-testing-fundamentals/03-test-strategy-and-the-test-pyramid.md)
+[← Answer Keys](../overview.md) · [Chapter 1.3](../../part-1-testing-fundamentals/03-test-strategy-and-the-test-pyramid.md)
 
 > **Instructor note:** Questions 3, 4, 6, and 9 are the ones that reveal whether placement has actually landed. Question 4 in particular separates learners who understand *what each layer proves* from those who have memorized a hierarchy. Exercise G.2 is the single most transferable activity in Part I — if session time is short, cut G.1 and keep G.2.
 

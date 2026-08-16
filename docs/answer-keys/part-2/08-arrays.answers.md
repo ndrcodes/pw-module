@@ -1,6 +1,6 @@
 # Answer Key — Chapter 2.8: Arrays
 
-[← Answer Keys](../README.md) · [Chapter 2.8](../../part-2-programming-fundamentals/08-arrays.md)
+[← Answer Keys](../overview.md) · [Chapter 2.8](../../part-2-programming-fundamentals/08-arrays.md)
 
 > **Instructor note:** Questions 1, 2, 4, and 5 are the live-demo set. Do `[1, 10, 2].sort()` and `[].reduce((a,b)=>a+b)` on screen. G.3 is the "reach for the named method" check; if a learner answers with `for` loops they are not done.
 

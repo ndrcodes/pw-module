@@ -1,6 +1,6 @@
 # Answer Key — Chapter 4.1: HTTP Fundamentals
 
-[← Answer Keys](../README.md) · [Chapter 4.1](../../part-4-api-testing-and-automation/01-http-fundamentals.md)
+[← Answer Keys](../overview.md) · [Chapter 4.1](../../part-4-api-testing-and-automation/01-http-fundamentals.md)
 
 > **Instructor note:** Questions 5–7 are the testing judgment items. If learners miss 5, they will file bugs on their own negative tests. If they miss 7, they will submit status-only suites.
 

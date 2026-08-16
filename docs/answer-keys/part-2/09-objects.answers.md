@@ -1,6 +1,6 @@
 # Answer Key — Chapter 2.9: Objects
 
-[← Answer Keys](../README.md) · [Chapter 2.9](../../part-2-programming-fundamentals/09-objects.md)
+[← Answer Keys](../overview.md) · [Chapter 2.9](../../part-2-programming-fundamentals/09-objects.md)
 
 > **Instructor note:** Questions 1, 3, 7, and 9 are the ones that predict factory and fixture bugs later. Demo `{ ...obj }` + nested `push` live. G.3 is the contract-reading exercise; protect it.
 

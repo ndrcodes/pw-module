@@ -1,6 +1,6 @@
 # Answer Key — Chapter 2.4: Operators
 
-[← Answer Keys](../README.md) · [Chapter 2.4](../../part-2-programming-fundamentals/04-operators.md)
+[← Answer Keys](../overview.md) · [Chapter 2.4](../../part-2-programming-fundamentals/04-operators.md)
 
 > **Instructor note:** Questions 4 and 9 are the two that matter professionally. Both describe defects that have shipped in real automation frameworks, and both are two characters wide. If the cohort gets everything else and misses these, spend the debrief there rather than on truthiness trivia.
 

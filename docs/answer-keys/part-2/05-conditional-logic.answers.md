@@ -1,6 +1,6 @@
 # Answer Key — Chapter 2.5: Conditional Logic
 
-[← Answer Keys](../README.md) · [Chapter 2.5](../../part-2-programming-fundamentals/05-conditional-logic.md)
+[← Answer Keys](../overview.md) · [Chapter 2.5](../../part-2-programming-fundamentals/05-conditional-logic.md)
 
 > **Instructor note:** Questions 1, 7, and 8 predict later success. A learner who still thinks unrecognized status should "count as passed" has not absorbed [Chapter 1.1](../../part-1-testing-fundamentals/01-what-is-software-testing.md). Exercise G.3's truth table is the one to protect if the session runs long.
 

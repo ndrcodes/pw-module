@@ -1,6 +1,6 @@
 # Answer Key — Chapter 4.3: Designing API Test Cases
 
-[← Answer Keys](../README.md) · [Chapter 4.3](../../part-4-api-testing-and-automation/03-designing-api-test-cases.md)
+[← Answer Keys](../overview.md) · [Chapter 4.3](../../part-4-api-testing-and-automation/03-designing-api-test-cases.md)
 
 > **Instructor note:** Grade G.3 and Assignment 4.3 on the quality of cuts, not row count. Question 7 is that policy as a true/false.
 

@@ -1,6 +1,6 @@
 # Answer Key — Chapter 2.1: Thinking Like a Programmer
 
-[← Answer Keys](../README.md) · [Chapter 2.1](../../part-2-programming-fundamentals/01-thinking-like-a-programmer.md)
+[← Answer Keys](../overview.md) · [Chapter 2.1](../../part-2-programming-fundamentals/01-thinking-like-a-programmer.md)
 
 > **Instructor note:** Questions 3 and 7 are the ones that predict who will struggle in Part II. A learner who cannot recognize a properly specified output (Q3) will produce vague designs for thirteen chapters. Q7 is worth discussing as a group rather than marking — most of the cohort will have lived it during Assignment 2.1.
 

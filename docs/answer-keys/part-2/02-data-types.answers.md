@@ -1,6 +1,6 @@
 # Answer Key — Chapter 2.2: Data Types
 
-[← Answer Keys](../README.md) · [Chapter 2.2](../../part-2-programming-fundamentals/02-data-types.md)
+[← Answer Keys](../overview.md) · [Chapter 2.2](../../part-2-programming-fundamentals/02-data-types.md)
 
 > **Instructor note:** Questions 5, 7, and 8 are the ones that matter. They test whether a learner has internalized that a wrong type produces a *silently wrong answer* rather than an error — the single idea this chapter exists to install. A learner who gets 1-4 right and 5-8 wrong has memorized the vocabulary and missed the point.
 

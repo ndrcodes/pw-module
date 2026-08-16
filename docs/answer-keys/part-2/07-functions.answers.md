@@ -1,6 +1,6 @@
 # Answer Key — Chapter 2.7: Functions
 
-[← Answer Keys](../README.md) · [Chapter 2.7](../../part-2-programming-fundamentals/07-functions.md)
+[← Answer Keys](../overview.md) · [Chapter 2.7](../../part-2-programming-fundamentals/07-functions.md)
 
 > **Instructor note:** Questions 2, 5, and 10 are the Project 1 predictors. A learner who cannot explain Q4 should not start Chapter 2.8. G.3 is the extraction muscle; protect it.
 
