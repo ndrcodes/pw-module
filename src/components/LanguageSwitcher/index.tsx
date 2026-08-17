@@ -1,7 +1,7 @@
 import type {ReactNode} from 'react';
-import React, {useEffect} from 'react';
+import React from 'react';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import {useLocation} from '@docusaurus/router';
+import {useAlternatePageUtils} from '@docusaurus/theme-common/internal';
 import styles from './styles.module.css';
 
 /**
@@ -14,84 +14,37 @@ const DOCS_WITH_ID_TRANSLATION = new Set([
   'part-3-automation-fundamentals/02-test-automation-architecture',
 ]);
 
-const LANG_PREF_KEY = 'docs-lang-preference';
-
 interface Props {
   docId: string;
 }
 
-/**
- * Builds the Indonesian locale URL for a given English pathname.
- * English pathname: /docs/part-3/...
- * Indonesian URL:   {baseUrl}id/docs/part-3/...
- */
-function toIdUrl(baseUrl: string, enPathname: string): string {
-  // baseUrl ends with '/', enPathname starts with '/'
-  // Result: /pw-module/id/docs/... (production) or /id/docs/... (local)
-  return `${baseUrl}id${enPathname}`;
-}
-
-/**
- * Builds the English locale URL for a given Indonesian pathname.
- * Indonesian pathname (from useLocation): /id/docs/part-3/...
- * English URL:                            {baseUrl.trimEnd('/') + '/docs/part-3/...'}
- */
-function toEnUrl(baseUrl: string, idPathname: string): string {
-  // Strip the leading /id segment from the pathname
-  const enPathname = idPathname.replace(/^\/id\//, '/');
-  // baseUrl ends with '/', so remove one trailing slash to avoid double-slash
-  return `${baseUrl.slice(0, -1)}${enPathname}`;
-}
-
 export default function LanguageSwitcher({docId}: Props): ReactNode {
-  const {i18n, siteConfig} = useDocusaurusContext();
+  const {i18n} = useDocusaurusContext();
   const currentLocale = i18n.currentLocale;
-  const baseUrl = siteConfig.baseUrl;
-  const location = useLocation();
+  const alternatePageUtils = useAlternatePageUtils();
 
   const hasTranslation = DOCS_WITH_ID_TRANSLATION.has(docId);
-
-  // On English pages that have a translation: redirect to Indonesian unless
-  // the user has explicitly chosen English.
-  useEffect(() => {
-    if (!hasTranslation) return;
-    if (currentLocale !== 'en') return;
-
-    const pref = localStorage.getItem(LANG_PREF_KEY);
-    if (pref !== 'en') {
-      window.location.replace(toIdUrl(baseUrl, location.pathname));
-    }
-  }, [hasTranslation, currentLocale, baseUrl, location.pathname]);
-
   if (!hasTranslation) return null;
 
   if (currentLocale === 'id') {
-    const enUrl = toEnUrl(baseUrl, location.pathname);
+    // On Indonesian page: offer switch to English
+    const enUrl = alternatePageUtils.createUrl({locale: 'en', fullyQualified: false});
     return (
       <div className={styles.switcher}>
         <span className={styles.currentLang}>🇮🇩 Bahasa Indonesia</span>
-        <a
-          href={enUrl}
-          className={styles.switchButton}
-          onClick={() => localStorage.setItem(LANG_PREF_KEY, 'en')}
-        >
+        <a href={enUrl} className={styles.switchButton}>
           Read in English
         </a>
       </div>
     );
   }
 
-  // English page — show a switch button (visible briefly before redirect or
-  // after the user explicitly chose English).
-  const idUrl = toIdUrl(baseUrl, location.pathname);
+  // On English page: offer switch to Indonesian
+  const idUrl = alternatePageUtils.createUrl({locale: 'id', fullyQualified: false});
   return (
     <div className={styles.switcher}>
       <span className={styles.currentLang}>🇬🇧 English</span>
-      <a
-        href={idUrl}
-        className={styles.switchButton}
-        onClick={() => localStorage.removeItem(LANG_PREF_KEY)}
-      >
+      <a href={idUrl} className={styles.switchButton}>
         Baca dalam Bahasa Indonesia
       </a>
     </div>
