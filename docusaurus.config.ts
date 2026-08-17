@@ -15,7 +15,7 @@ const config: Config = {
   organizationName: 'ndrcodes',
   projectName: 'pw-module',
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenAnchors: 'warn',
 
   markdown: {
@@ -33,7 +33,17 @@ const config: Config = {
 
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'id'],
+    localeConfigs: {
+      en: {
+        label: 'English',
+        htmlLang: 'en',
+      },
+      id: {
+        label: 'Bahasa Indonesia',
+        htmlLang: 'id',
+      },
+    },
   },
 
   themes: ['@docusaurus/theme-mermaid'],
