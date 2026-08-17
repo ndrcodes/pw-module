@@ -9,7 +9,6 @@ import LanguageSwitcher from '@site/src/components/LanguageSwitcher';
 type Props = WrapperProps<typeof ContentType>;
 
 const WIP_PREFIXES = [
-  'part-4-api-testing-and-automation/',
   'part-5-web-automation-playwright/',
   'part-6-framework-engineering/',
   'part-7-cicd/',
