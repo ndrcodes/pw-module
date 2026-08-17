@@ -60,7 +60,6 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Part IV — API testing',
-      className: 'sidebar-wip',
       link: {type: 'doc', id: 'part-4-api-testing-and-automation/00-module-overview'},
       items: [
         'part-4-api-testing-and-automation/01-http-fundamentals',

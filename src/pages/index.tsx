@@ -43,7 +43,7 @@ const sections: Section[] = [
     title: 'Part IV — API testing',
     description: 'HTTP, REST, and Playwright API automation.',
     to: '/docs/part-4-api-testing-and-automation/00-module-overview',
-    status: 'wip',
+    status: 'ready',
   },
   {
     title: 'Part V — Web automation',
@@ -126,7 +126,7 @@ export default function Home(): ReactNode {
             Curriculum
           </Heading>
           <p className={styles.sectionLead}>
-            Parts I–III are ready to study. Later parts and projects are listed
+            Parts I–IV are ready to study. Later parts and projects are listed
             in full, with an In Progress label until the chapter bodies are
             finished.
           </p>
