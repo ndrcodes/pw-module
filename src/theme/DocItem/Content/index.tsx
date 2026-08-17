@@ -4,6 +4,7 @@ import type ContentType from '@theme/DocItem/Content';
 import type {WrapperProps} from '@docusaurus/types';
 import {useDoc} from '@docusaurus/plugin-content-docs/client';
 import Admonition from '@theme/Admonition';
+import LanguageSwitcher from '@site/src/components/LanguageSwitcher';
 
 type Props = WrapperProps<typeof ContentType>;
 
@@ -28,6 +29,7 @@ export default function ContentWrapper(props: Props): ReactNode {
 
   return (
     <>
+      <LanguageSwitcher docId={docId} />
       {isWip && (
         <Admonition type="caution" title="In Progress">
           This section is still under development. You can read the objectives

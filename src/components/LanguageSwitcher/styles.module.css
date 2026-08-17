@@ -1,0 +1,41 @@
+.switcher {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0.875rem;
+  margin-bottom: 1.25rem;
+  background: var(--ifm-color-emphasis-100);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  font-size: 0.875rem;
+  flex-wrap: wrap;
+}
+
+.currentLang {
+  color: var(--ifm-color-content-secondary);
+  font-weight: 500;
+}
+
+.switchButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.25rem 0.625rem;
+  border-radius: 4px;
+  background: var(--ifm-color-primary);
+  color: #fff !important;
+  font-weight: 500;
+  text-decoration: none !important;
+  transition: background 0.15s ease, opacity 0.15s ease;
+  white-space: nowrap;
+}
+
+.switchButton:hover {
+  background: var(--ifm-color-primary-dark);
+  opacity: 1;
+}
+
+[data-theme='dark'] .switcher {
+  background: var(--ifm-color-emphasis-100);
+  border-color: var(--ifm-color-emphasis-300);
+}
