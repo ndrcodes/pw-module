@@ -1,0 +1,24 @@
+## Track selesai — apa selanjutnya?
+
+Kamu sudah menempuh alur lengkap dari fondasi Playwright sampai cara mikir anti-flaky. Progress modul tersimpan di browser kamu; kalau mau reset, hapus data situs untuk domain ini atau pakai tombol reset di sidebar (kalau ada).
+
+### Ringkasan singkat
+
+- UI test kecil tapi tajam — sisanya di API.
+- Context bersih tiap test = independence bawaan.
+- Locator ngomongin intent user.
+- Assertion = sinkronisasi.
+
+### Lanjutan di kurikulum
+
+| Next | Isi |
+| --- | --- |
+| [Part VI — Framework engineering](/docs/part-6-framework-engineering/00-module-overview) | Page Object, fixture, auth strategy |
+| [Project 4 — Web automation](/docs/projects/project-4-web-automation) | Terapkan ke skenario demo shop |
+| [Dokumentasi chapter 5.x (EN)](/docs/part-5-web-automation-playwright/00-module-overview) | Referensi mendalam + quiz |
+
+### Terima kasih sudah konsisten
+
+Belajar automation itu marathon. Kalau ada modul yang masih terasa berat, ulang phase-nya — tidak perlu buru-buru ke POM sebelum locator kamu mantap.
+
+Sampai ketemu di modul framework.

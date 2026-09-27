@@ -1,0 +1,55 @@
+## Siapin lab Playwright
+
+Asumsi: kamu sudah punya project Playwright dari Part IV (API). Kalau belum, buat baru:
+
+```bash
+npm init playwright@latest
+```
+
+Pilih TypeScript, folder `tests`, dan install browser saat diminta.
+
+### Install browser
+
+```bash
+npx playwright install
+```
+
+Ini download Chromium/Firefox/WebKit yang dipakai runner — bukan browser harian kamu.
+
+### Jalankan test pertama
+
+```bash
+npx playwright test
+```
+
+Kalau mau lihat browser-nya jalan:
+
+```bash
+npx playwright test --headed
+```
+
+### Buka report
+
+Setelah run:
+
+```bash
+npx playwright show-report
+```
+
+Report HTML ini teman terbaikmu waktu debug. Biasanya lebih enak daripada `console.log` berjejer.
+
+### Video singkat: struktur project Playwright
+
+Di bawah ini contoh embed video dari markdown (bisa YouTube atau file `.mp4` di folder `static/`):
+
+```video
+https://www.youtube.com/watch?v=9F5Q8KXf4Y4
+```
+
+Kalau koneksi lambat, cukup baca langkah di atas — videonya opsional.
+
+### Checklist mental sebelum lanjut
+
+- Project bisa di-run tanpa error environment.
+- Kamu tahu bedanya `test` file vs `playwright.config`.
+- Kamu sudah buka report minimal sekali.

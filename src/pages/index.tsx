@@ -52,6 +52,12 @@ const sections: Section[] = [
     status: 'wip',
   },
   {
+    title: 'Belajar Playwright (ID)',
+    description: 'Modul step-by-step dalam Bahasa Indonesia — progress tersimpan di browser.',
+    to: '/learn/playwright',
+    status: 'ready',
+  },
+  {
     title: 'Part VI — Framework engineering',
     description: 'Page objects, fixtures, data, config, and flake diagnosis.',
     to: '/docs/part-6-framework-engineering/00-module-overview',

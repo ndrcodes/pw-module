@@ -1,0 +1,37 @@
+## Upload file & keyboard
+
+### Upload
+
+```typescript
+await page.getByLabel('Lampiran').setInputFiles('fixtures/bukti-transfer.pdf');
+```
+
+Untuk multiple files, kirim array path.
+
+### Keyboard
+
+```typescript
+await page.getByLabel('Kode voucher').press('Enter');
+```
+
+Atau kombinasi:
+
+```typescript
+await page.keyboard.press('Control+K');
+```
+
+### Video dari markdown
+
+Tim bisa embed YouTube atau file MP4 di folder `static/`:
+
+```video
+https://www.youtube.com/watch?v=9F5Q8KXf4Y4
+```
+
+> Format ` ```video ` di markdown mendukung URL YouTube (`watch` / `youtu.be`) dan path lokal seperti `/img/learn/demo.mp4`.
+
+### Hal yang sering lupa
+
+- Input file sering **hidden** — tetap bisa di-target kalau ada label/test id yang benar.
+- Setelah upload, assert nama file atau preview muncul.
+- Jangan hardcode path absolut di CI; pakai path relatif ke project.

@@ -1,0 +1,38 @@
+## Flaky test: diagnosa tanpa drama
+
+Flaky = kadang hijau, kadang merah tanpa perubahan kode. Dua penyebab paling sering di UI:
+
+1. **Locator ambigu** — match elemen beda tergantung urutan render.
+2. **Assertion terlalu cepat** — cek sebelum UI selesai update.
+
+“Timing issue” sering cuma gejala.
+
+### Langkah diagnosa
+
+1. Jalankan ulang test yang gagal **dengan trace**:
+
+```bash
+npx playwright test path/to/spec.ts --trace on
+```
+
+2. Buka trace viewer, lihat screenshot per step.
+3. Cek apakah locator kena elemen lain di screenshot gagal.
+
+### `waitForTimeout` = defect
+
+Sleep membuat test:
+
+- lebih lambat,
+- masih bisa gagal kalau mesin CI lebih lambat,
+- menyembunyikan bug timing asli.
+
+Kalau di code review ada `waitForTimeout`, treat itu seperti `any` di TypeScript — perlu alasan kuat (jarang).
+
+### Checklist perbaikan
+
+- [ ] Perketat locator (role + name, scope container)
+- [ ] Ganti sleep dengan `expect`
+- [ ] Pastikan data test unik (hindari tabrakan parallel)
+- [ ] Retry CI maksimal 1 — bukan solusi flaky
+
+Kamu sudah siap lanjut ke **Page Object Model** dan fixture di Part VI.

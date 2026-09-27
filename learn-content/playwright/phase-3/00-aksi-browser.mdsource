@@ -1,0 +1,40 @@
+## Aksi yang paling sering di UI test
+
+Playwright nunggu elemen **actionable** sebelum klik/isi. Kamu tetap harus pilih locator yang benar.
+
+### Text input
+
+```typescript
+await page.getByLabel('Nama').fill('Andi');
+```
+
+`fill` clear dulu lalu ketik — cocok untuk kebanyakan field.
+
+### Checkbox & radio
+
+```typescript
+await page.getByRole('checkbox', { name: 'Kirim newsletter' }).check();
+await page.getByRole('radio', { name: 'Bayar transfer' }).check();
+```
+
+### Dropdown native
+
+```typescript
+await page.getByLabel('Provinsi').selectOption('Jawa Barat');
+// atau by value
+await page.getByLabel('Provinsi').selectOption({ value: 'JB' });
+```
+
+### Klik
+
+```typescript
+await page.getByRole('button', { name: 'Tambah ke keranjang' }).click();
+```
+
+### Tip QA
+
+Setelah aksi, **selalu** assert outcome yang user lihat — bukan cuma “kliknya tidak error”.
+
+```typescript
+await expect(page.getByText('Produk ditambahkan')).toBeVisible();
+```

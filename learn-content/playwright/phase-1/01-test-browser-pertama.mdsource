@@ -1,0 +1,43 @@
+## Test browser pertama (AAA tetap jalan)
+
+Pola yang sama dari API test: **Arrange → Act → Assert**. Bedanya, Arrange bisa lewat API (data) + UI (navigasi).
+
+### Contoh minimal
+
+```typescript
+import { test, expect } from '@playwright/test';
+
+test('halaman demo punya judul yang benar', async ({ page }) => {
+  await page.goto('https://playwright.dev/');
+  await expect(page).toHaveTitle(/Playwright/);
+});
+```
+
+### Tambah satu interaksi
+
+```typescript
+test('menu Docs bisa diklik', async ({ page }) => {
+  await page.goto('https://playwright.dev/');
+  await page.getByRole('link', { name: 'Docs' }).click();
+  await expect(page).toHaveURL(/docs/);
+});
+```
+
+Perhatikan:
+
+- `getByRole` — locator yang ngomongin intent user.
+- `expect` **tanpa** `await` manual untuk “nunggu halaman” — web-first assertion retry sendiri.
+
+### Anti-pattern yang sering kejadian
+
+| Jangan | Kenapa |
+| --- | --- |
+| `waitForTimeout(3000)` | Waktu ngambang, test jadi lambat & masih flaky |
+| Assert cuma URL setelah login | User tidak lihat URL; assert elemen yang user lihat |
+| Skip `await` di action | Promise menggantung, error random |
+
+### Latihan cepat (5 menit)
+
+1. Buka situs demo yang kamu pakai di kursus.
+2. Assert satu teks yang **kelihatan** di halaman.
+3. Jalankan 3x berturut — harusnya stabil tanpa sleep.
