@@ -1,0 +1,38 @@
+## Praktik: dari CSS ke role/label
+
+Ambil satu test yang sudah ada (atau tulis baru) dengan locator CSS. Tugas: refactor tanpa ubah behavior.
+
+### Before
+
+```typescript
+await page.locator('#email').fill('qa@example.com');
+await page.locator('#submit').click();
+```
+
+### After
+
+```typescript
+await page.getByLabel('Email').fill('qa@example.com');
+await page.getByRole('button', { name: 'Masuk' }).click();
+```
+
+Kalau label tidak ada di DOM, opsi lain:
+
+- minta tim dev tambah `aria-label` / `data-testid`, atau
+- `getByPlaceholder` kalau placeholder-nya stabil secara produk.
+
+### Debug locator
+
+```bash
+npx playwright codegen https://your-app.example
+```
+
+Codegen bagus buat **eksplorasi**, bukan buat commit mentah. Copy pola locator-nya, rapikan, baru masuk repo.
+
+### Gambar: inspector Playwright
+
+![Playwright Inspector membantu coba locator](/img/learn/playwright-inspector.svg)
+
+### Output yang diharapkan
+
+Setelah refactor, test masih hijau — dan kamu bisa jelasin **kenapa** locator baru lebih dekat ke cara user berpikir.

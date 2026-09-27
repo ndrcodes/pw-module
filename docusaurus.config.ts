@@ -2,6 +2,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 import remarkStripHiddenLinks from './src/remark/strip-hidden-links';
+import learnPlaywrightPlugin from './src/plugins/learn-playwright-plugin';
 
 const config: Config = {
   title: 'QA Automation with Playwright',
@@ -49,6 +50,7 @@ const config: Config = {
   themes: ['@docusaurus/theme-mermaid'],
 
   plugins: [
+    learnPlaywrightPlugin,
     [
       '@docusaurus/plugin-client-redirects',
       {
@@ -83,7 +85,7 @@ const config: Config = {
         },
         blog: false,
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: ['./src/css/custom.css', './src/css/learn-playwright.css'],
         },
       } satisfies Preset.Options,
     ],
@@ -103,6 +105,11 @@ const config: Config = {
           sidebarId: 'curriculumSidebar',
           position: 'left',
           label: 'Curriculum',
+        },
+        {
+          to: '/learn/playwright',
+          label: 'Belajar Playwright',
+          position: 'left',
         },
         {
           to: '/docs/answer-keys',

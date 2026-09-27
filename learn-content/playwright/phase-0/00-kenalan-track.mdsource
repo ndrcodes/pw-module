@@ -1,0 +1,39 @@
+## Selamat datang di track Playwright
+
+Kamu sudah jauh sampai sini — TypeScript, API test, prinsip test yang bagus. Track ini fokus ke **browser**: halaman yang user lihat, bukan JSON di Postman.
+
+### Kenapa UI test tidak di hari pertama?
+
+Browser itu **mahal**: lambat, lebih rapuh, dan maintenance-nya lebih berat daripada API test. Makanya di kurikulum ini, Playwright web baru masuk setelah kamu bisa:
+
+- nulis test yang deterministik,
+- setup data lewat API,
+- dan bedain masalah locator vs masalah timing.
+
+Singkatnya: kamu belajar dulu *judgment*, baru mesinnya.
+
+### Apa yang bakal kamu bangun?
+
+Di akhir track ini, kamu bisa:
+
+1. Jelasin hierarki **Browser → Context → Page** dan kenapa tiap test dapat context bersih.
+2. Pilih locator yang **tahan redesign** (role & label dulu, bukan CSS panjang).
+3. Interaksi lengkap: klik, isi form, upload, keyboard.
+4. Assert dengan pola **web-first** (retry sampai bener atau timeout).
+5. Diagnosa flaky test tanpa numpuk `sleep`.
+
+### Peta singkat modul
+
+| Phase | Fokus |
+| --- | --- |
+| 0 | Orientasi & lab |
+| 1 | Objek inti Playwright |
+| 2 | Locator strategy |
+| 3 | Aksi user di UI |
+| 4 | Assertion |
+| 5 | Sinkronisasi & flaky |
+| 6 | Penutup & next step |
+
+> **Tips:** modul di sidebar kiri bisa dicentang satu per satu. Progress-nya disimpan di browser kamu (local storage), jadi aman buat belajar sendiri.
+
+Kalau mau lihat gambaran objek Playwright dulu, scroll ke modul **1.0** — ada diagram hierarkinya.

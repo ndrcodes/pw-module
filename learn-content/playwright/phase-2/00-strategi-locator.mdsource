@@ -1,0 +1,34 @@
+## Urutan prioritas locator
+
+Locator = cara kamu bilang ke Playwright “elemen mana”. Locator jelek = test yang kelihatan flaky padahal masalahnya selector.
+
+### Prioritas (dari yang paling disarankan)
+
+1. **`getByRole`** — tombol, link, heading, textbox, dll.
+2. **`getByLabel`** — field yang punya label aksesibel.
+3. **`getByText`** — teks yang user baca (hati-hati partial match).
+4. **`getByPlaceholder`**
+5. **`getByTestId`** — bagus kalau tim UI set `data-testid` konsisten.
+6. **CSS** — terakhir kalau memang tidak ada opsi aksesibel.
+7. **XPath** — escape hatch; hindari kalau bisa.
+
+### Contoh refactor mental
+
+```typescript
+// Rapuh — struktur DOM berubah, test pecah
+page.locator('div.checkout > form > button.btn-primary');
+
+// Lebih tahan — ngomongin peran & nama yang user lihat
+page.getByRole('button', { name: 'Bayar sekarang' });
+```
+
+### Strict mode
+
+Kalau locator match **lebih dari satu** elemen, Playwright error. Itu fitur: mencegah test “kebetulan” klik yang salah.
+
+Solusi: perjelas name/role, scope ke container (`getByRole('dialog').getByRole('button', ...)`), atau filter.
+
+### QA mindset
+
+Tanya: *“Kalau desainer ganti class CSS, apakah user masih bisa ngelakuin hal yang sama?”*  
+Kalau iya, locator kamu harusnya tetap valid.

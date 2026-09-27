@@ -1,0 +1,35 @@
+## Auto-wait: apa yang sudah & belum
+
+Sebelum action, Playwright cek kira-kira:
+
+- elemen attached ke DOM,
+- visible,
+- stable (tidak animasi liar),
+- enabled,
+- menerima event.
+
+Makanya banyak test “tanpa sleep” tetap jalan.
+
+### Yang **belum** otomatis
+
+- Data backend selesai diproses tapi UI tidak berubah.
+- Spinner hilang tapi konten masih placeholder.
+- Kondisi bisnis kompleks (mis. “status paid” di DB tapi UI masih pending).
+
+Solusi: assert **state UI yang user harusnya lihat**, atau tunggu response network yang relevan.
+
+### Contoh tunggu response
+
+```typescript
+const responsePromise = page.waitForResponse(
+  (res) => res.url().includes('/api/orders') && res.status() === 200,
+);
+await page.getByRole('button', { name: 'Buat pesanan' }).click();
+await responsePromise;
+await expect(page.getByText('Pesanan berhasil')).toBeVisible();
+```
+
+### Mindset
+
+Kalau kamu tergoda nambah sleep, tanya: *“Apa kondisi yang sebenarnya aku tunggu?”*  
+Jawabannya hampir selalu bisa diubah jadi assertion atau `waitForResponse`.

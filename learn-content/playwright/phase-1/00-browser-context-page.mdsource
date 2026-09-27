@@ -1,0 +1,43 @@
+## Browser, Context, Page — bedanya apa?
+
+Playwright ngatur browser pakai tiga lapisan. Kalau ini kepegang, banyak “magic behavior” jadi masuk akal.
+
+![Hierarki Browser, Context, dan Page](/img/learn/playwright-hierarchy.svg)
+
+### Browser
+
+Proses browser yang jalan (Chromium, Firefox, atau WebKit). **Mahal** buat startup, jadi runner biasanya reuse satu browser untuk banyak test.
+
+### BrowserContext
+
+Profil terisolasi di dalam browser — kayak **incognito window**: cookie, storage, dan session sendiri. **Tiap test** di Playwright Test biasanya dapat context baru → test tidak saling kontaminasi.
+
+### Page
+
+Satu tab di dalam context. Fixture `page` yang kamu pakai di test itu tab ini.
+
+### Kenapa ini penting buat QA?
+
+- **Parallel aman:** context terpisah = login user A dan user B bisa jalan bareng.
+- **Independence:** tidak perlu logout manual di akhir test; context berikutnya sudah bersih.
+- **Locator auto-wait** jalan di level Page — tapi scope datanya tetap di Context.
+
+### Contoh mental model
+
+```typescript
+// Konsep — runner yang bener ngurus lifecycle-nya
+const browser = await chromium.launch();
+const context = await browser.newContext();
+const page = await context.newPage();
+await page.goto('https://demo.shop');
+```
+
+Di test runner, kamu cukup:
+
+```typescript
+test('contoh', async ({ page }) => {
+  await page.goto('/');
+});
+```
+
+`page` sudah fresh. Jangan share `page` antar test “biar cepat” — itu jalan pintas yang mahal di maintenance.

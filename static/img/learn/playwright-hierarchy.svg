@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="220" viewBox="0 0 640 220" role="img" aria-label="Browser berisi Context berisi Page">
+  <rect width="640" height="220" fill="#F5F0E6"/>
+  <rect x="24" y="24" width="592" height="56" rx="8" fill="#2563EB"/>
+  <text x="40" y="58" fill="#FFF8E7" font-family="system-ui,sans-serif" font-size="18" font-weight="600">Browser (proses Chromium / Firefox / WebKit)</text>
+  <rect x="48" y="96" width="544" height="56" rx="8" fill="#3B82F6"/>
+  <text x="64" y="130" fill="#FFF8E7" font-family="system-ui,sans-serif" font-size="16" font-weight="600">BrowserContext (cookie &amp; storage terisolasi)</text>
+  <rect x="72" y="168" width="496" height="40" rx="8" fill="#FFF8E7" stroke="#2563EB" stroke-width="2"/>
+  <text x="88" y="194" fill="#1E3A5F" font-family="system-ui,sans-serif" font-size="15" font-weight="600">Page (satu tab  fixture `page` di test)</text>
+</svg>

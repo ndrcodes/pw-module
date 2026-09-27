@@ -1,0 +1,41 @@
+## Web-first assertions
+
+Di Playwright, `expect` ke locator/page **retry** sampai kondisi terpenuhi atau timeout. Itu sekaligus sinkronisasi — bukan cuma pengecekan.
+
+### Visibility & teks
+
+```typescript
+await expect(page.getByRole('heading', { name: 'Checkout' })).toBeVisible();
+await expect(page.getByTestId('cart-total')).toHaveText('Rp 150.000');
+await expect(page.getByText('Gratis ongkir')).toBeVisible();
+```
+
+### Value & attribute
+
+```typescript
+await expect(page.getByLabel('Email')).toHaveValue('qa@example.com');
+await expect(page.getByRole('link', { name: 'Bantuan' })).toHaveAttribute('href', /support/);
+```
+
+### URL & title
+
+```typescript
+await expect(page).toHaveURL(/dashboard/);
+await expect(page).toHaveTitle(/Dashboard/);
+```
+
+### Count
+
+```typescript
+await expect(page.getByRole('listitem')).toHaveCount(3);
+```
+
+### Mengganti sleep
+
+| Sleep | Ganti dengan |
+| --- | --- |
+| `waitForTimeout` setelah klik | `expect(...).toBeVisible()` pada hasil |
+| Sleep menunggu navigasi | `expect(page).toHaveURL(...)` |
+| Sleep menunggu API | `page.waitForResponse(...)` atau assert UI akhir |
+
+Assertion yang spesifik = test yang lebih cepat **dan** lebih jelas saat gagal.
